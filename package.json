@@ -1,9 +1,18 @@
 {
   "name": "@opensource-dev/athena",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "A Vuex-like state management system for react and react native.",
-  "main": "src/index.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
   "scripts": {
     "build": "rollup -c"
   },
