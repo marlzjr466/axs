@@ -1,5 +1,5 @@
 
-# `axs`
+# `Athena`
 
 A Vuex-like state management system for React, providing a simple and flexible way to manage global state, actions, mutations, and getters. This package allows you to define modular state management in React using a structure similar to Vuex, which makes it easy to scale and maintain complex React applications.
 
@@ -13,12 +13,12 @@ A Vuex-like state management system for React, providing a simple and flexible w
 
 ## Installation
 
-You can install `axs` via npm or yarn:
+You can install `athena` via npm or yarn:
 
 ```bash
-npm install axs
+npm install @opensource-dev/athena
 # or
-yarn add axs
+yarn add @opensource-dev/athena
 ```
 
 ## Package Contents
@@ -31,14 +31,14 @@ This package provides the following components:
 
 ## Getting Started
 
-Here’s a guide on how to integrate `axs` into your React application.
+Here’s a guide on how to integrate `athena` into your React or React Native application.
 
 ### Step 1: Define Your Modules
 
 Each module will have a structure containing `states`, `mutations`, `actions`, and `getters`.
 
 ```ts
-import { Module } from 'axs';
+import { Module } from '@opensource-dev/athena';
 
 const authModule: Module = () => ({
   name: 'auth',
@@ -95,7 +95,7 @@ const authModule: Module = () => ({
 Once you have your modules, you can combine them into a global store using `createGlobalStore`. You can then wrap your app in the `Provider` component that this function returns.
 
 ```ts
-import { createGlobalStore } from 'axs'
+import { createGlobalStore } from '@opensource-dev/athena'
 import authModule from './modules/authModule'
 import cartModule from './modules/cartModule'  // Example of another module
 
@@ -117,7 +117,7 @@ const App = () => {
 Once the global store is set up, you can access state, mutations, actions, and getters using the `useModule` hook.
 
 ```tsx
-import { useModule } from 'axs'
+import { useModule } from '@opensource-dev/athena'
 
 const LoginComponent = () => {
   const { states, actions } = useModule()
@@ -178,7 +178,7 @@ actions: {
 
 ```tsx
 import React from 'react'
-import { useModule } from 'axs'
+import { useModule } from '@opensource-dev/athena'
 
 const App = () => {
   const { states, actions } = useModule()
