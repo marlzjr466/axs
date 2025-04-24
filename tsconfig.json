@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "react-jsx",              // 👈 or "react" for older setups
     "declaration": true,
     "emitDeclarationOnly": true,
     "outDir": "dist",

@@ -1,4 +1,4 @@
-import typescript from 'rollup-plugin-typescript2';
+import typescript from '@rollup/plugin-typescript';
 
 export default {
   input: 'src/index.ts',
@@ -12,12 +12,5 @@ export default {
       format: 'esm',
     },
   ],
-  plugins: [
-    typescript({
-      tsconfig: './tsconfig.json',
-      useTsconfigDeclarationDir: true,
-      clean: true,
-    }),
-  ],
-  external: [], // Add external dependencies if needed
+  plugins: [typescript()],
 };
