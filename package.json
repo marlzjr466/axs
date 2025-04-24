@@ -1,5 +1,5 @@
 {
-  "name": "axs",
+  "name": "athena",
   "version": "1.0.0",
   "description": "A Vuex-like state management system for react and react native.",
   "type": "commonjs",
@@ -22,12 +22,17 @@
   "keywords": [
     "state",
     "state management",
-    "axs",
+    "athena",
     "react",
     "react native",
     "vuex",
     "vuex-like"
   ],
   "author": "marlzjr15",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlzjr466/axs"
+  },
+  "homepage": "https://github.com/marlzjr466/axs#readme"
 }
