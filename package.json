@@ -1,0 +1,33 @@
+{
+  "name": "axs",
+  "version": "1.0.0",
+  "description": "A Vuex-like state management system for react and react native.",
+  "type": "commonjs",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "rollup": "^4.40.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "state",
+    "state management",
+    "axs",
+    "react",
+    "react native",
+    "vuex",
+    "vuex-like"
+  ],
+  "author": "marlzjr15",
+  "license": "MIT"
+}
