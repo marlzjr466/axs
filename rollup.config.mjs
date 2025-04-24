@@ -12,6 +12,12 @@ export default {
       format: 'esm',
     },
   ],
-  plugins: [typescript()],
-  external: ['react', 'react-dom'],
+  plugins: [
+    typescript({
+      tsconfig: './tsconfig.json',
+      useTsconfigDeclarationDir: true,
+      clean: true,
+    }),
+  ],
+  external: [], // Add external dependencies if needed
 };
