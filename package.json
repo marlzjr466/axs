@@ -1,5 +1,5 @@
 {
-  "name": "athena",
+  "name": "@opensource-dev/athena",
   "version": "1.0.0",
   "description": "A Vuex-like state management system for react and react native.",
   "type": "commonjs",
@@ -26,7 +26,9 @@
     "react",
     "react native",
     "vuex",
-    "vuex-like"
+    "vuex-like",
+    "@opensource-dev",
+    "@opensource-dev/athena"
   ],
   "author": "marlzjr15",
   "license": "MIT",
