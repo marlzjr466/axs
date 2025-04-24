@@ -1,6 +1,6 @@
 {
   "name": "@opensource-dev/athena",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vuex-like state management system for react and react native.",
   "type": "commonjs",
   "main": "dist/index.cjs.js",
